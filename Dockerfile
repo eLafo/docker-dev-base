@@ -1,4 +1,4 @@
-FROM ubuntu:17.10
+FROM debian:jessie
 MAINTAINER eLafo
 
 #### DEVELOPMENT ENVIRONMENT CONFIGURATION #####
