@@ -11,7 +11,6 @@ ENV USER_HOME=/home/$USER_NAME
 ENV PATH $USER_HOME:$PATH
 
 RUN mkdir $APP_HOME
-#RUN mkdir $BUNDLE_HOME $APP_HOME
 ######### GENERAL DEVELOPMENT LIBRARIES AND TOOLS #########
 
 RUN apt-get update &&\
@@ -128,10 +127,7 @@ RUN \
     homesick clone eLafo/tmux-dot-files &&\
     homesick symlink --force=true tmux-dot-files
 
-#RUN sudo chown -R $USER_NAME:$USER_NAME $GEM_HOME
-
 VOLUME $APP_HOME
-#VOLUME $GEM_HOME
 
 WORKDIR $APP_HOME
 
