@@ -37,6 +37,7 @@ RUN apt-get update &&\
       net-tools\
       libarchive-dev\
       libodbc1\
+      mysql-client\
       libmysqlclient-dev\
       cmake\
       chrpath\
